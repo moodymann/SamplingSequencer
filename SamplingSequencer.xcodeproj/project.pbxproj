@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB302D4C19B43C5100EE5C9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB302D4B19B43C5100EE5C9C /* Foundation.framework */; };
+		EB302D4E19B43C5100EE5C9C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB302D4D19B43C5100EE5C9C /* CoreGraphics.framework */; };
+		EB302D5019B43C5100EE5C9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB302D4F19B43C5100EE5C9C /* UIKit.framework */; };
+		EB302D5619B43C5100EE5C9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB302D5419B43C5100EE5C9C /* InfoPlist.strings */; };
+		EB302D5819B43C5100EE5C9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB302D5719B43C5100EE5C9C /* main.m */; };
+		EB302D5C19B43C5100EE5C9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB302D5B19B43C5100EE5C9C /* AppDelegate.m */; };
+		EB302D5F19B43C5100EE5C9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB302D5D19B43C5100EE5C9C /* Main.storyboard */; };
+		EB302D6219B43C5100EE5C9C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB302D6119B43C5100EE5C9C /* FirstViewController.m */; };
+		EB302D6519B43C5100EE5C9C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB302D6419B43C5100EE5C9C /* SecondViewController.m */; };
+		EB302D6719B43C5100EE5C9C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB302D6619B43C5100EE5C9C /* Images.xcassets */; };
+		EB302D6E19B43C5100EE5C9C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB302D6D19B43C5100EE5C9C /* XCTest.framework */; };
+		EB302D6F19B43C5100EE5C9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB302D4B19B43C5100EE5C9C /* Foundation.framework */; };
+		EB302D7019B43C5100EE5C9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB302D4F19B43C5100EE5C9C /* UIKit.framework */; };
+		EB302D7819B43C5100EE5C9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB302D7619B43C5100EE5C9C /* InfoPlist.strings */; };
+		EB302D7A19B43C5100EE5C9C /* SamplingSequencerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB302D7919B43C5100EE5C9C /* SamplingSequencerTests.m */; };
+		EB302DA119B43D9300EE5C9C /* AEFloatConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = EB302D8719B43D9300EE5C9C /* AEFloatConverter.m */; };
+		EB302DA219B43D9300EE5C9C /* EZAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = EB302D8919B43D9300EE5C9C /* EZAudio.m */; };
+		EB302DA319B43D9300EE5C9C /* EZAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = EB302D8B19B43D9300EE5C9C /* EZAudioFile.m */; };
+		EB302DA419B43D9300EE5C9C /* EZAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EB302D8D19B43D9300EE5C9C /* EZAudioPlayer.m */; };
+		EB302DA519B43D9300EE5C9C /* EZAudioPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = EB302D8F19B43D9300EE5C9C /* EZAudioPlot.m */; };
+		EB302DA619B43D9300EE5C9C /* EZAudioPlotGL.m in Sources */ = {isa = PBXBuildFile; fileRef = EB302D9119B43D9300EE5C9C /* EZAudioPlotGL.m */; };
+		EB302DA719B43D9300EE5C9C /* EZAudioPlotGLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB302D9319B43D9300EE5C9C /* EZAudioPlotGLKViewController.m */; };
+		EB302DA819B43D9300EE5C9C /* EZMicrophone.m in Sources */ = {isa = PBXBuildFile; fileRef = EB302D9519B43D9300EE5C9C /* EZMicrophone.m */; };
+		EB302DA919B43D9300EE5C9C /* EZOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = EB302D9719B43D9300EE5C9C /* EZOutput.m */; };
+		EB302DAA19B43D9300EE5C9C /* EZPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = EB302D9919B43D9300EE5C9C /* EZPlot.m */; };
+		EB302DAB19B43D9300EE5C9C /* EZRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = EB302D9B19B43D9300EE5C9C /* EZRecorder.m */; };
+		EB302DAC19B43D9300EE5C9C /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = EB302D9C19B43D9300EE5C9C /* TPCircularBuffer.c */; };
+		EB302DAD19B43D9300EE5C9C /* CHANGELOG in Resources */ = {isa = PBXBuildFile; fileRef = EB302D9F19B43D9300EE5C9C /* CHANGELOG */; };
+		EB302DAE19B43D9300EE5C9C /* VERSION in Resources */ = {isa = PBXBuildFile; fileRef = EB302DA019B43D9300EE5C9C /* VERSION */; };
+		EB302DB119B43DDD00EE5C9C /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB302DB019B43DDD00EE5C9C /* HeaderView.m */; };
+		EB302DB419B43DEA00EE5C9C /* Sequencer.m in Sources */ = {isa = PBXBuildFile; fileRef = EB302DB319B43DEA00EE5C9C /* Sequencer.m */; };
+		EB302DB919B43E1000EE5C9C /* SeqView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB302DB619B43E1000EE5C9C /* SeqView.m */; };
+		EB302DBA19B43E1000EE5C9C /* StepView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB302DB819B43E1000EE5C9C /* StepView.m */; };
+		EB302DBD19B43E2E00EE5C9C /* Sampler.m in Sources */ = {isa = PBXBuildFile; fileRef = EB302DBC19B43E2E00EE5C9C /* Sampler.m */; };
+		EB302DC019B450AB00EE5C9C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB302DBE19B450AB00EE5C9C /* AudioToolbox.framework */; };
+		EB302DC119B450AB00EE5C9C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB302DBF19B450AB00EE5C9C /* AVFoundation.framework */; };
+		EB302DC319B454F900EE5C9C /* simple-drum-beat.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB302DC219B454F900EE5C9C /* simple-drum-beat.wav */; };
+		EB302DC519B456A000EE5C9C /* EZAudioTest.aiff in Resources */ = {isa = PBXBuildFile; fileRef = EB302DC419B456A000EE5C9C /* EZAudioTest.aiff */; };
+		EB302DC919B6D1A300EE5C9C /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB302DC819B6D1A300EE5C9C /* View.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB302D7119B43C5100EE5C9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB302D4019B43C5100EE5C9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB302D4719B43C5100EE5C9C;
+			remoteInfo = SamplingSequencer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB302D4819B43C5100EE5C9C /* SamplingSequencer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SamplingSequencer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB302D4B19B43C5100EE5C9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EB302D4D19B43C5100EE5C9C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EB302D4F19B43C5100EE5C9C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EB302D5319B43C5100EE5C9C /* SamplingSequencer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SamplingSequencer-Info.plist"; sourceTree = "<group>"; };
+		EB302D5519B43C5100EE5C9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EB302D5719B43C5100EE5C9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB302D5919B43C5100EE5C9C /* SamplingSequencer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SamplingSequencer-Prefix.pch"; sourceTree = "<group>"; };
+		EB302D5A19B43C5100EE5C9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB302D5B19B43C5100EE5C9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB302D5E19B43C5100EE5C9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB302D6019B43C5100EE5C9C /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		EB302D6119B43C5100EE5C9C /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		EB302D6319B43C5100EE5C9C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		EB302D6419B43C5100EE5C9C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		EB302D6619B43C5100EE5C9C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EB302D6C19B43C5100EE5C9C /* SamplingSequencerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SamplingSequencerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB302D6D19B43C5100EE5C9C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EB302D7519B43C5100EE5C9C /* SamplingSequencerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SamplingSequencerTests-Info.plist"; sourceTree = "<group>"; };
+		EB302D7719B43C5100EE5C9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EB302D7919B43C5100EE5C9C /* SamplingSequencerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SamplingSequencerTests.m; sourceTree = "<group>"; };
+		EB302D8619B43D9300EE5C9C /* AEFloatConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEFloatConverter.h; sourceTree = "<group>"; };
+		EB302D8719B43D9300EE5C9C /* AEFloatConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEFloatConverter.m; sourceTree = "<group>"; };
+		EB302D8819B43D9300EE5C9C /* EZAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZAudio.h; sourceTree = "<group>"; };
+		EB302D8919B43D9300EE5C9C /* EZAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZAudio.m; sourceTree = "<group>"; };
+		EB302D8A19B43D9300EE5C9C /* EZAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZAudioFile.h; sourceTree = "<group>"; };
+		EB302D8B19B43D9300EE5C9C /* EZAudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZAudioFile.m; sourceTree = "<group>"; };
+		EB302D8C19B43D9300EE5C9C /* EZAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZAudioPlayer.h; sourceTree = "<group>"; };
+		EB302D8D19B43D9300EE5C9C /* EZAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZAudioPlayer.m; sourceTree = "<group>"; };
+		EB302D8E19B43D9300EE5C9C /* EZAudioPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZAudioPlot.h; sourceTree = "<group>"; };
+		EB302D8F19B43D9300EE5C9C /* EZAudioPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZAudioPlot.m; sourceTree = "<group>"; };
+		EB302D9019B43D9300EE5C9C /* EZAudioPlotGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZAudioPlotGL.h; sourceTree = "<group>"; };
+		EB302D9119B43D9300EE5C9C /* EZAudioPlotGL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZAudioPlotGL.m; sourceTree = "<group>"; };
+		EB302D9219B43D9300EE5C9C /* EZAudioPlotGLKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZAudioPlotGLKViewController.h; sourceTree = "<group>"; };
+		EB302D9319B43D9300EE5C9C /* EZAudioPlotGLKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZAudioPlotGLKViewController.m; sourceTree = "<group>"; };
+		EB302D9419B43D9300EE5C9C /* EZMicrophone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMicrophone.h; sourceTree = "<group>"; };
+		EB302D9519B43D9300EE5C9C /* EZMicrophone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMicrophone.m; sourceTree = "<group>"; };
+		EB302D9619B43D9300EE5C9C /* EZOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZOutput.h; sourceTree = "<group>"; };
+		EB302D9719B43D9300EE5C9C /* EZOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZOutput.m; sourceTree = "<group>"; };
+		EB302D9819B43D9300EE5C9C /* EZPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZPlot.h; sourceTree = "<group>"; };
+		EB302D9919B43D9300EE5C9C /* EZPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZPlot.m; sourceTree = "<group>"; };
+		EB302D9A19B43D9300EE5C9C /* EZRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZRecorder.h; sourceTree = "<group>"; };
+		EB302D9B19B43D9300EE5C9C /* EZRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZRecorder.m; sourceTree = "<group>"; };
+		EB302D9C19B43D9300EE5C9C /* TPCircularBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TPCircularBuffer.c; sourceTree = "<group>"; };
+		EB302D9D19B43D9300EE5C9C /* TPCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPCircularBuffer.h; sourceTree = "<group>"; };
+		EB302D9F19B43D9300EE5C9C /* CHANGELOG */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG; sourceTree = "<group>"; };
+		EB302DA019B43D9300EE5C9C /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
+		EB302DAF19B43DDD00EE5C9C /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		EB302DB019B43DDD00EE5C9C /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		EB302DB219B43DEA00EE5C9C /* Sequencer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sequencer.h; sourceTree = "<group>"; };
+		EB302DB319B43DEA00EE5C9C /* Sequencer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sequencer.m; sourceTree = "<group>"; };
+		EB302DB519B43E1000EE5C9C /* SeqView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeqView.h; sourceTree = "<group>"; };
+		EB302DB619B43E1000EE5C9C /* SeqView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeqView.m; sourceTree = "<group>"; };
+		EB302DB719B43E1000EE5C9C /* StepView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepView.h; sourceTree = "<group>"; };
+		EB302DB819B43E1000EE5C9C /* StepView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepView.m; sourceTree = "<group>"; };
+		EB302DBB19B43E2E00EE5C9C /* Sampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sampler.h; sourceTree = "<group>"; };
+		EB302DBC19B43E2E00EE5C9C /* Sampler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sampler.m; sourceTree = "<group>"; };
+		EB302DBE19B450AB00EE5C9C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EB302DBF19B450AB00EE5C9C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EB302DC219B454F900EE5C9C /* simple-drum-beat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "simple-drum-beat.wav"; path = "../../../sample/EZAudio-master/EZAudioExamples/simple-drum-beat.wav"; sourceTree = "<group>"; };
+		EB302DC419B456A000EE5C9C /* EZAudioTest.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = EZAudioTest.aiff; path = ../../../EZAudioTest.aiff; sourceTree = "<group>"; };
+		EB302DC819B6D1A300EE5C9C /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB302D4519B43C5100EE5C9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB302DC019B450AB00EE5C9C /* AudioToolbox.framework in Frameworks */,
+				EB302DC119B450AB00EE5C9C /* AVFoundation.framework in Frameworks */,
+				EB302D4E19B43C5100EE5C9C /* CoreGraphics.framework in Frameworks */,
+				EB302D5019B43C5100EE5C9C /* UIKit.framework in Frameworks */,
+				EB302D4C19B43C5100EE5C9C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB302D6919B43C5100EE5C9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB302D6E19B43C5100EE5C9C /* XCTest.framework in Frameworks */,
+				EB302D7019B43C5100EE5C9C /* UIKit.framework in Frameworks */,
+				EB302D6F19B43C5100EE5C9C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB302D3F19B43C5100EE5C9C = {
+			isa = PBXGroup;
+			children = (
+				EB302D5119B43C5100EE5C9C /* SamplingSequencer */,
+				EB302D7319B43C5100EE5C9C /* SamplingSequencerTests */,
+				EB302D4A19B43C5100EE5C9C /* Frameworks */,
+				EB302D4919B43C5100EE5C9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB302D4919B43C5100EE5C9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB302D4819B43C5100EE5C9C /* SamplingSequencer.app */,
+				EB302D6C19B43C5100EE5C9C /* SamplingSequencerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB302D4A19B43C5100EE5C9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB302DBE19B450AB00EE5C9C /* AudioToolbox.framework */,
+				EB302DBF19B450AB00EE5C9C /* AVFoundation.framework */,
+				EB302D4B19B43C5100EE5C9C /* Foundation.framework */,
+				EB302D4D19B43C5100EE5C9C /* CoreGraphics.framework */,
+				EB302D4F19B43C5100EE5C9C /* UIKit.framework */,
+				EB302D6D19B43C5100EE5C9C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB302D5119B43C5100EE5C9C /* SamplingSequencer */ = {
+			isa = PBXGroup;
+			children = (
+				EB302D8519B43D9300EE5C9C /* EZAudio */,
+				EB302D8319B43CA300EE5C9C /* model */,
+				EB302D8419B43CA800EE5C9C /* view */,
+				EB302D5A19B43C5100EE5C9C /* AppDelegate.h */,
+				EB302D5B19B43C5100EE5C9C /* AppDelegate.m */,
+				EB302D5D19B43C5100EE5C9C /* Main.storyboard */,
+				EB302D6019B43C5100EE5C9C /* FirstViewController.h */,
+				EB302D6119B43C5100EE5C9C /* FirstViewController.m */,
+				EB302D6319B43C5100EE5C9C /* SecondViewController.h */,
+				EB302D6419B43C5100EE5C9C /* SecondViewController.m */,
+				EB302D6619B43C5100EE5C9C /* Images.xcassets */,
+				EB302DC419B456A000EE5C9C /* EZAudioTest.aiff */,
+				EB302DC219B454F900EE5C9C /* simple-drum-beat.wav */,
+				EB302D5219B43C5100EE5C9C /* Supporting Files */,
+				EB302DC819B6D1A300EE5C9C /* View.xib */,
+			);
+			path = SamplingSequencer;
+			sourceTree = "<group>";
+		};
+		EB302D5219B43C5100EE5C9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB302D5319B43C5100EE5C9C /* SamplingSequencer-Info.plist */,
+				EB302D5419B43C5100EE5C9C /* InfoPlist.strings */,
+				EB302D5719B43C5100EE5C9C /* main.m */,
+				EB302D5919B43C5100EE5C9C /* SamplingSequencer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB302D7319B43C5100EE5C9C /* SamplingSequencerTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB302D7919B43C5100EE5C9C /* SamplingSequencerTests.m */,
+				EB302D7419B43C5100EE5C9C /* Supporting Files */,
+			);
+			path = SamplingSequencerTests;
+			sourceTree = "<group>";
+		};
+		EB302D7419B43C5100EE5C9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB302D7519B43C5100EE5C9C /* SamplingSequencerTests-Info.plist */,
+				EB302D7619B43C5100EE5C9C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB302D8319B43CA300EE5C9C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				EB302DBB19B43E2E00EE5C9C /* Sampler.h */,
+				EB302DBC19B43E2E00EE5C9C /* Sampler.m */,
+				EB302DB219B43DEA00EE5C9C /* Sequencer.h */,
+				EB302DB319B43DEA00EE5C9C /* Sequencer.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		EB302D8419B43CA800EE5C9C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				EB302DAF19B43DDD00EE5C9C /* HeaderView.h */,
+				EB302DB019B43DDD00EE5C9C /* HeaderView.m */,
+				EB302DB519B43E1000EE5C9C /* SeqView.h */,
+				EB302DB619B43E1000EE5C9C /* SeqView.m */,
+				EB302DB719B43E1000EE5C9C /* StepView.h */,
+				EB302DB819B43E1000EE5C9C /* StepView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		EB302D8519B43D9300EE5C9C /* EZAudio */ = {
+			isa = PBXGroup;
+			children = (
+				EB302D8619B43D9300EE5C9C /* AEFloatConverter.h */,
+				EB302D8719B43D9300EE5C9C /* AEFloatConverter.m */,
+				EB302D8819B43D9300EE5C9C /* EZAudio.h */,
+				EB302D8919B43D9300EE5C9C /* EZAudio.m */,
+				EB302D8A19B43D9300EE5C9C /* EZAudioFile.h */,
+				EB302D8B19B43D9300EE5C9C /* EZAudioFile.m */,
+				EB302D8C19B43D9300EE5C9C /* EZAudioPlayer.h */,
+				EB302D8D19B43D9300EE5C9C /* EZAudioPlayer.m */,
+				EB302D8E19B43D9300EE5C9C /* EZAudioPlot.h */,
+				EB302D8F19B43D9300EE5C9C /* EZAudioPlot.m */,
+				EB302D9019B43D9300EE5C9C /* EZAudioPlotGL.h */,
+				EB302D9119B43D9300EE5C9C /* EZAudioPlotGL.m */,
+				EB302D9219B43D9300EE5C9C /* EZAudioPlotGLKViewController.h */,
+				EB302D9319B43D9300EE5C9C /* EZAudioPlotGLKViewController.m */,
+				EB302D9419B43D9300EE5C9C /* EZMicrophone.h */,
+				EB302D9519B43D9300EE5C9C /* EZMicrophone.m */,
+				EB302D9619B43D9300EE5C9C /* EZOutput.h */,
+				EB302D9719B43D9300EE5C9C /* EZOutput.m */,
+				EB302D9819B43D9300EE5C9C /* EZPlot.h */,
+				EB302D9919B43D9300EE5C9C /* EZPlot.m */,
+				EB302D9A19B43D9300EE5C9C /* EZRecorder.h */,
+				EB302D9B19B43D9300EE5C9C /* EZRecorder.m */,
+				EB302D9C19B43D9300EE5C9C /* TPCircularBuffer.c */,
+				EB302D9D19B43D9300EE5C9C /* TPCircularBuffer.h */,
+				EB302D9E19B43D9300EE5C9C /* VERSION */,
+			);
+			path = EZAudio;
+			sourceTree = "<group>";
+		};
+		EB302D9E19B43D9300EE5C9C /* VERSION */ = {
+			isa = PBXGroup;
+			children = (
+				EB302D9F19B43D9300EE5C9C /* CHANGELOG */,
+				EB302DA019B43D9300EE5C9C /* VERSION */,
+			);
+			path = VERSION;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB302D4719B43C5100EE5C9C /* SamplingSequencer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB302D7D19B43C5100EE5C9C /* Build configuration list for PBXNativeTarget "SamplingSequencer" */;
+			buildPhases = (
+				EB302D4419B43C5100EE5C9C /* Sources */,
+				EB302D4519B43C5100EE5C9C /* Frameworks */,
+				EB302D4619B43C5100EE5C9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SamplingSequencer;
+			productName = SamplingSequencer;
+			productReference = EB302D4819B43C5100EE5C9C /* SamplingSequencer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB302D6B19B43C5100EE5C9C /* SamplingSequencerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB302D8019B43C5100EE5C9C /* Build configuration list for PBXNativeTarget "SamplingSequencerTests" */;
+			buildPhases = (
+				EB302D6819B43C5100EE5C9C /* Sources */,
+				EB302D6919B43C5100EE5C9C /* Frameworks */,
+				EB302D6A19B43C5100EE5C9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB302D7219B43C5100EE5C9C /* PBXTargetDependency */,
+			);
+			name = SamplingSequencerTests;
+			productName = SamplingSequencerTests;
+			productReference = EB302D6C19B43C5100EE5C9C /* SamplingSequencerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB302D4019B43C5100EE5C9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = neckpain;
+				TargetAttributes = {
+					EB302D6B19B43C5100EE5C9C = {
+						TestTargetID = EB302D4719B43C5100EE5C9C;
+					};
+				};
+			};
+			buildConfigurationList = EB302D4319B43C5100EE5C9C /* Build configuration list for PBXProject "SamplingSequencer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB302D3F19B43C5100EE5C9C;
+			productRefGroup = EB302D4919B43C5100EE5C9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB302D4719B43C5100EE5C9C /* SamplingSequencer */,
+				EB302D6B19B43C5100EE5C9C /* SamplingSequencerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB302D4619B43C5100EE5C9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB302D6719B43C5100EE5C9C /* Images.xcassets in Resources */,
+				EB302DAD19B43D9300EE5C9C /* CHANGELOG in Resources */,
+				EB302DC319B454F900EE5C9C /* simple-drum-beat.wav in Resources */,
+				EB302DC519B456A000EE5C9C /* EZAudioTest.aiff in Resources */,
+				EB302DC919B6D1A300EE5C9C /* View.xib in Resources */,
+				EB302D5619B43C5100EE5C9C /* InfoPlist.strings in Resources */,
+				EB302D5F19B43C5100EE5C9C /* Main.storyboard in Resources */,
+				EB302DAE19B43D9300EE5C9C /* VERSION in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB302D6A19B43C5100EE5C9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB302D7819B43C5100EE5C9C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB302D4419B43C5100EE5C9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB302DA519B43D9300EE5C9C /* EZAudioPlot.m in Sources */,
+				EB302DA419B43D9300EE5C9C /* EZAudioPlayer.m in Sources */,
+				EB302DA119B43D9300EE5C9C /* AEFloatConverter.m in Sources */,
+				EB302DAA19B43D9300EE5C9C /* EZPlot.m in Sources */,
+				EB302D6519B43C5100EE5C9C /* SecondViewController.m in Sources */,
+				EB302DA719B43D9300EE5C9C /* EZAudioPlotGLKViewController.m in Sources */,
+				EB302DAC19B43D9300EE5C9C /* TPCircularBuffer.c in Sources */,
+				EB302DB419B43DEA00EE5C9C /* Sequencer.m in Sources */,
+				EB302DAB19B43D9300EE5C9C /* EZRecorder.m in Sources */,
+				EB302DBD19B43E2E00EE5C9C /* Sampler.m in Sources */,
+				EB302DB119B43DDD00EE5C9C /* HeaderView.m in Sources */,
+				EB302DA319B43D9300EE5C9C /* EZAudioFile.m in Sources */,
+				EB302DA619B43D9300EE5C9C /* EZAudioPlotGL.m in Sources */,
+				EB302DBA19B43E1000EE5C9C /* StepView.m in Sources */,
+				EB302D5C19B43C5100EE5C9C /* AppDelegate.m in Sources */,
+				EB302DA819B43D9300EE5C9C /* EZMicrophone.m in Sources */,
+				EB302DB919B43E1000EE5C9C /* SeqView.m in Sources */,
+				EB302DA219B43D9300EE5C9C /* EZAudio.m in Sources */,
+				EB302D6219B43C5100EE5C9C /* FirstViewController.m in Sources */,
+				EB302DA919B43D9300EE5C9C /* EZOutput.m in Sources */,
+				EB302D5819B43C5100EE5C9C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB302D6819B43C5100EE5C9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB302D7A19B43C5100EE5C9C /* SamplingSequencerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB302D7219B43C5100EE5C9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB302D4719B43C5100EE5C9C /* SamplingSequencer */;
+			targetProxy = EB302D7119B43C5100EE5C9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB302D5419B43C5100EE5C9C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB302D5519B43C5100EE5C9C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EB302D5D19B43C5100EE5C9C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB302D5E19B43C5100EE5C9C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB302D7619B43C5100EE5C9C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB302D7719B43C5100EE5C9C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB302D7B19B43C5100EE5C9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EB302D7C19B43C5100EE5C9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB302D7E19B43C5100EE5C9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SamplingSequencer/SamplingSequencer-Prefix.pch";
+				INFOPLIST_FILE = "SamplingSequencer/SamplingSequencer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EB302D7F19B43C5100EE5C9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SamplingSequencer/SamplingSequencer-Prefix.pch";
+				INFOPLIST_FILE = "SamplingSequencer/SamplingSequencer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EB302D8119B43C5100EE5C9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SamplingSequencer.app/SamplingSequencer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SamplingSequencer/SamplingSequencer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SamplingSequencerTests/SamplingSequencerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EB302D8219B43C5100EE5C9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SamplingSequencer.app/SamplingSequencer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SamplingSequencer/SamplingSequencer-Prefix.pch";
+				INFOPLIST_FILE = "SamplingSequencerTests/SamplingSequencerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB302D4319B43C5100EE5C9C /* Build configuration list for PBXProject "SamplingSequencer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB302D7B19B43C5100EE5C9C /* Debug */,
+				EB302D7C19B43C5100EE5C9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB302D7D19B43C5100EE5C9C /* Build configuration list for PBXNativeTarget "SamplingSequencer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB302D7E19B43C5100EE5C9C /* Debug */,
+				EB302D7F19B43C5100EE5C9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EB302D8019B43C5100EE5C9C /* Build configuration list for PBXNativeTarget "SamplingSequencerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB302D8119B43C5100EE5C9C /* Debug */,
+				EB302D8219B43C5100EE5C9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB302D4019B43C5100EE5C9C /* Project object */;
+}
