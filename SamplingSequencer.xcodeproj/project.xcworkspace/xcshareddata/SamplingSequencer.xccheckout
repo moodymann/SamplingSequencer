@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>69E8E17E-304E-43C2-B207-612F20425C3C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SamplingSequencer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DEE44836-AA7B-4E9C-A3F1-21BAEF74416A</key>
+		<string>https://github.com/moodymann/SamplingSequencer.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SamplingSequencer.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DEE44836-AA7B-4E9C-A3F1-21BAEF74416A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/moodymann/SamplingSequencer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DEE44836-AA7B-4E9C-A3F1-21BAEF74416A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DEE44836-AA7B-4E9C-A3F1-21BAEF74416A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SamplingSequencer</string>
+		</dict>
+	</array>
+</dict>
+</plist>

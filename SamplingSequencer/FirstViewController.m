@@ -44,7 +44,7 @@
     self.audioPlot.shouldFill      = YES;
     // Mirror
     self.audioPlot.shouldMirror    = YES;
-
+ 
     /*
      Start the microphone
      */
