@@ -230,7 +230,7 @@ withNumberOfChannels:(UInt32)numberOfChannels {
         [self.recButton setTitle:@"Rec" forState:UIControlStateNormal];
         [self.recorder closeAudioFile];
 
-        NSError *err; 
+        NSError *err;  
         self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[self testFilePathURL]
                                                                   error:&err];
 //        
