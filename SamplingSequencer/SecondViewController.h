@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ModalViewController.h"
+#import "SharedService.h"
 
 @interface SecondViewController : UIViewController
+<ModalViewControllerDelegate>
 
 @end

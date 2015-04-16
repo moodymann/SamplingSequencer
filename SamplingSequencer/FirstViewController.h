@@ -41,7 +41,9 @@ EZAudioFileDelegate,EZOutputDataSource>
 @property (weak, nonatomic) IBOutlet UISlider *framePositionSlider;
 @property (weak, nonatomic) IBOutlet UIButton *recButton;
 
-- (IBAction)recStart:(id)sender;
 
+- (IBAction)recStart:(id)sender;
 - (IBAction)seekToFrame:(id)sender;
+- (void)updateSeqView;
+
 @end

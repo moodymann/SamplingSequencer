@@ -46,6 +46,8 @@
 		EB302DC319B454F900EE5C9C /* simple-drum-beat.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB302DC219B454F900EE5C9C /* simple-drum-beat.wav */; };
 		EB302DC519B456A000EE5C9C /* EZAudioTest.aiff in Resources */ = {isa = PBXBuildFile; fileRef = EB302DC419B456A000EE5C9C /* EZAudioTest.aiff */; };
 		EB302DC919B6D1A300EE5C9C /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB302DC819B6D1A300EE5C9C /* View.xib */; };
+		EB68C7F41ADE425700CEE975 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB68C7F31ADE425700CEE975 /* ModalViewController.m */; };
+		EB68C7F71ADE4A2700CEE975 /* SharedService.m in Sources */ = {isa = PBXBuildFile; fileRef = EB68C7F61ADE4A2700CEE975 /* SharedService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +123,10 @@
 		EB302DC219B454F900EE5C9C /* simple-drum-beat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "simple-drum-beat.wav"; path = "../../../sample/EZAudio-master/EZAudioExamples/simple-drum-beat.wav"; sourceTree = "<group>"; };
 		EB302DC419B456A000EE5C9C /* EZAudioTest.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = EZAudioTest.aiff; path = ../../../EZAudioTest.aiff; sourceTree = "<group>"; };
 		EB302DC819B6D1A300EE5C9C /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		EB68C7F21ADE425700CEE975 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		EB68C7F31ADE425700CEE975 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		EB68C7F51ADE4A2700CEE975 /* SharedService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedService.h; sourceTree = "<group>"; };
+		EB68C7F61ADE4A2700CEE975 /* SharedService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +205,10 @@
 				EB302DC219B454F900EE5C9C /* simple-drum-beat.wav */,
 				EB302D5219B43C5100EE5C9C /* Supporting Files */,
 				EB302DC819B6D1A300EE5C9C /* View.xib */,
+				EB68C7F21ADE425700CEE975 /* ModalViewController.h */,
+				EB68C7F31ADE425700CEE975 /* ModalViewController.m */,
+				EB68C7F51ADE4A2700CEE975 /* SharedService.h */,
+				EB68C7F61ADE4A2700CEE975 /* SharedService.m */,
 			);
 			path = SamplingSequencer;
 			sourceTree = "<group>";
@@ -408,6 +418,7 @@
 				EB302DAC19B43D9300EE5C9C /* TPCircularBuffer.c in Sources */,
 				EB302DB419B43DEA00EE5C9C /* Sequencer.m in Sources */,
 				EB302DAB19B43D9300EE5C9C /* EZRecorder.m in Sources */,
+				EB68C7F71ADE4A2700CEE975 /* SharedService.m in Sources */,
 				EB302DBD19B43E2E00EE5C9C /* Sampler.m in Sources */,
 				EB302DB119B43DDD00EE5C9C /* HeaderView.m in Sources */,
 				EB302DA319B43D9300EE5C9C /* EZAudioFile.m in Sources */,
@@ -415,6 +426,7 @@
 				EB302DBA19B43E1000EE5C9C /* StepView.m in Sources */,
 				EB302D5C19B43C5100EE5C9C /* AppDelegate.m in Sources */,
 				EB302DA819B43D9300EE5C9C /* EZMicrophone.m in Sources */,
+				EB68C7F41ADE425700CEE975 /* ModalViewController.m in Sources */,
 				EB302DB919B43E1000EE5C9C /* SeqView.m in Sources */,
 				EB302DA219B43D9300EE5C9C /* EZAudio.m in Sources */,
 				EB302D6219B43C5100EE5C9C /* FirstViewController.m in Sources */,
@@ -624,6 +636,7 @@
 				EB302D7F19B43C5100EE5C9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB302D8019B43C5100EE5C9C /* Build configuration list for PBXNativeTarget "SamplingSequencerTests" */ = {
 			isa = XCConfigurationList;
@@ -632,6 +645,7 @@
 				EB302D8219B43C5100EE5C9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

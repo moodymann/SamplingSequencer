@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "SharedService.h"
 
 @interface FirstViewController ()
 {
@@ -253,5 +254,12 @@ withNumberOfChannels:(UInt32)numberOfChannels {
 
 - (IBAction)seekToFrame:(id)sender {
     [self.audioFile seekToFrame:(SInt64)[(UISlider*)sender value]];
+}
+
+- (void)updateSeqView
+{
+    seqView.stepsDown = [SharedService sharedInstance].steps1;
+    [seqView setNeedsDisplay];
+
 }
 @end
