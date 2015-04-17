@@ -1,1 +1,1 @@
-# SamplingSequencer
+EZAudioで録音してシーケンスするiphone用アプリ
